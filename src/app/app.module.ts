@@ -7,6 +7,7 @@ import { StarComponent } from './star/star.component';
 import { ReplacePipe } from './pipe/replace.pipe';
 import { NavBarComponent } from './navbar/navbar.component';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 import { NotFound404Component } from './NotFound 404/NotFound404.component';
 import { CourseInfoComponent } from './courses/course-info.component';
 
@@ -42,6 +43,7 @@ import { CourseInfoComponent } from './courses/course-info.component';
         component: NotFound404Component,
       }
     ]),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
